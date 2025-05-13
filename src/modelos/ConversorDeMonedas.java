@@ -20,7 +20,6 @@ public class ConversorDeMonedas {
     private CodesNames codesNames;
     private String mensajeDeEntrada;
     private int monedaBase,monedaDestino,montoParaCalcular=0;
-   // private ArrayList<Moneda> arrayMonedas = new ArrayList<>();
     private String uriTarifas="https://v6.exchangerate-api.com/v6/6648dbca36f9b0fda04440db/latest/USD";
     private String uriCodes="https://v6.exchangerate-api.com/v6/6648dbca36f9b0fda04440db/codes";
     private String uriPair = "https://v6.exchangerate-api.com/v6/6648dbca36f9b0fda04440db/pair/";
@@ -148,6 +147,8 @@ public class ConversorDeMonedas {
         }
     }
 
+
+    //Usamos la api para conversionde pares de monedas
     public void hacerConversion(String opcion) {
 
         if ((monedaBase==0) && (monedaDestino==0)){
